@@ -8,25 +8,27 @@
 
 nav {
     display:flex;
-    background-color: black;
+    background-color: white;
     justify-content: flex-end;
     align-items: center;
-    color:white;
+    color:black;
     position: relative;
-    height: 75px;
+    height: 78px;
     width: 100%;
     position: fixed;
     top:0;
+
 }
 
 nav img {
     height: 60px;
     position: absolute;
     left: 5px;
+    background-repeat: no-repeat;
 }
 
 nav h2 {
-    position: absolute;
+    position:absolute;
     left: 80px;
 }
 
@@ -37,15 +39,15 @@ nav h2 {
 }
 
 .right-nav li {
-    color: white;
+    color: black;
     text-decoration: none;
     display:inline-flex;
     padding: 10px;
- 
+
 }
 
 a {
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
@@ -53,28 +55,44 @@ a:hover {
     color: blue;
 }
 
+.separator {
+    display: flex;
+    justify-content: center;
+
+}
+
+.separator-line {
+    height: 10px;
+    width: 35%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin: 30px;
+}
 
 main {
-    margin-top: 75px;
+    margin-top: 78px;
 }
 
 .home-page {
-    background-image: url(soho-nyc-black-white-l.jpeg);
+    background-image: url(./pictures/red-book-rests-on-wood.jpeg);
+    background-size:cover;
+    background-repeat: no-repeat;
     display:flex;
     justify-content: center;
     align-items: center;
 }
 
 .home-text {
-    background-color: rgba(237, 231, 231, 0.494);
-    border-radius: 10%;
+    background-color: rgba(237, 231, 231, 0.5);
     text-align: center;
-    padding: 5px;
-    color:black;
-    width: 500px;
-    height: 400px;
-    margin: 25px;
+    padding: 10px;
+    color: black;
+    border-radius: 5%;
+    width: 45%;
+    margin: 55px;
+    height: 450px;
     display: flex;
+    font-weight: bolder;
     align-items: center;
     flex-direction: column;
     justify-content: center;
@@ -85,7 +103,7 @@ main {
 .services-overview {
     display: flex;
     justify-content: center;
-    text-align: center;
+    text-align: justify;
     margin: 25px;
 
 }
@@ -103,23 +121,32 @@ main {
     display:flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
+    padding: 25px;
+    
 }
 
 .service-des {
     width: 25%;
-    max-height: 350px;
+    max-height: 450px;
     margin: 20px;
     max-width: 75%;
-    border: 5px solid black;
+    border: 1px solid black;
     border-radius: 5%;
     padding: 20px;
+    
+}
+
+.service-des:hover {
+    background-color:blanchedalmond;
 }
 
 .About {
     display: flex;
     justify-content: center;
-    margin: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .about-content {
@@ -133,8 +160,13 @@ main {
     
 }
 
+.about-content p {
+    line-height: 175%;
+}
+
 #headshot {
     border-radius: 5%;
+    display: flex;
 }
 
 
@@ -142,20 +174,63 @@ main {
     background-color: antiquewhite;
 }
 
+#recent-proj {
+    padding: 25px;
+    text-align: center;
+}
+.recent-projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.proj {
+    border: 1px solid black;
+    max-width: 300px;
+    padding: 20px;
+    margin: 5px;
+}
+
+
+.proj h2 {
+    text-decoration: underline;
+}
+
+.proj h4 {
+    font-style: italic;
+}
+
 .contact {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    flex-wrap: wrap;
+    
+}
+
+.contact-content {
+    max-width: 50%;
+}
+
+.contact-info {
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    margin: 20px;
-    font-size: 130%;
+    margin: 25px;
+    font-size: 120%;
 }
 
 footer {
+
     text-align: center;
     color: white;
-    background-color: black;
-    font-size: 150%;
-    padding: 20px;
+    background-color:#006bb3;
+    font-size: 125%;
+    padding: 40px;
 }
+
