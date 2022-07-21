@@ -197,15 +197,27 @@ li {
 
 .proj {
     border: 1px solid black;
-    max-width: 300px;
+    max-width: 30em;
     padding: 20px;
-    margin: 5px;
+    margin: 2em;
+    border-radius: 5%;
+}
+
+.proj:hover {
+    background-color:blanchedalmond;
 }
 
 .indent {
     margin-left: 1em;
 }
 
+.projlink {
+    color:blue;
+}
+
+.projlink:hover {
+    font-size: 115%;
+}
 
 .proj h2 {
     text-decoration: underline;
@@ -213,6 +225,7 @@ li {
 
 .proj h4 {
     font-style: italic;
+    font-size: 115%;
 }
 
 .contact {
