@@ -113,7 +113,7 @@ li {
     display: flex;
     justify-content: center;
     text-align: justify;
-    margin: 25px;
+    margin: 2em;
 
 }
 
@@ -131,7 +131,7 @@ li {
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 25px;
+    padding: 2em;
 }
 
 .service-des {
@@ -176,7 +176,7 @@ li {
 #headshot {
     border-radius: 5%;
     display: flex;
-    max-width: 100%;
+    max-width: 90%;
 }
 
 
@@ -233,13 +233,13 @@ li {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 20px;
+    padding: 1.8em;
     flex-wrap: wrap;
     
 }
 
 .contact-content {
-    max-width: 50%;
+    max-width: 60%;
 }
 
 .contact-info {
@@ -247,10 +247,12 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    margin: 25px;
+    padding: 1em;
+    margin: 1em;
     font-size: 120%;
 }
+
+
 
 footer {
 
@@ -259,5 +261,28 @@ footer {
     background-color:#006bb3;
     font-size: 125%;
     padding: 40px;
+}
+
+@media only screen and (max-width:768px) {
+    .right-nav{
+        display: none;
+    }
+    nav h2 {
+        max-width: 90%;
+    }
+    .home-text {
+        max-width: 90%;
+        margin:1em;
+    }
+    .again {
+        max-width: 85%;
+    }
+    .service-des {
+        width: 90%;
+    }
+
+    .about-content {
+        width: 85%;
+    }
 }
 
